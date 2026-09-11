@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://raw.githubusercontent.com/josansito/Tienda-3DS/main/tienda.unistore",
     "file": "tienda.unistore",
-    "revision": 28,
+    "revision": 29,
     "version": 3
   },
   "storeContent": [
@@ -43,15 +43,14 @@
       },
       "scripts": [
         {
+          "type": "makeDir",
+          "path": "sdmc:/roms/gba"
+        },
+        {
           "type": "downloadRelease",
           "repository": "josansito/Tienda-3DS",
           "tag": "V1.0.0",
           "file": "Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
-          "output": "sdmc:/pokemon_temp.gba"
-        },
-        {
-          "type": "moveFile",
-          "file": "sdmc:/pokemon_temp.gba",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
