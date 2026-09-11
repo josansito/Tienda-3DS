@@ -3,9 +3,9 @@
     "title": "Tienda-3DS",
     "author": "Josansito",
     "description": "Repositorio privado de Apps, NDS y GBA",
-    "url": "https://githubusercontent.com",
+    "url": "https://raw.githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 5,
+    "revision": 6,
     "version": 4
   },
   "storeContent": [
@@ -16,15 +16,23 @@
         "description": "Tu app homebrew personalizada. Se instalara directamente en el menu HOME.",
         "category": ["Apps"]
       },
-      "attachments": [
+      "script": [
         {
-          "type": "cia",
-          "url": "https://githubusercontent.com",
-          "title": "Instalar archivo CIA",
-          "script": [
-            "installCia"
-          ]
+          "type": "downloadFile",
+          "file": "%URL%",
+          "output": "sdmc:/tienda_temp.cia"
+        },
+        {
+          "type": "installCia",
+          "file": "sdmc:/tienda_temp.cia"
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/tienda_temp.cia"
         }
+      ],
+      "attachments": [
+        "https://githubusercontent.com"
       ]
     },
     {
@@ -34,13 +42,15 @@
         "description": "Juego de Nintendo DS. Se guardara en la carpeta para TWiLight Menu++.",
         "category": ["NDS"]
       },
-      "attachments": [
+      "script": [
         {
-          "type": "item",
-          "url": "https://githubusercontent.com",
-          "title": "Descargar juego NDS",
+          "type": "downloadFile",
+          "file": "%URL%",
           "output": "sdmc:/roms/nds/juego_ejemplo.nds"
         }
+      ],
+      "attachments": [
+        "https://githubusercontent.com"
       ]
     },
     {
@@ -50,13 +60,15 @@
         "description": "Juego de Game Boy Advance. Se guardara en la carpeta para open_agb_firm o emuladores.",
         "category": ["GBA"]
       },
-      "attachments": [
+      "script": [
         {
-          "type": "item",
-          "url": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
-          "title": "Descargar Pokémon Quetzal GBA",
+          "type": "downloadFile",
+          "file": "%URL%",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
+      ],
+      "attachments": [
+        "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba"
       ]
     }
   ]
