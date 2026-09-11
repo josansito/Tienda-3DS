@@ -50,7 +50,7 @@
       "attachments": [
         {
           "type": "item",
-          "url": "https://archive.org",
+          "url": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
