@@ -16,7 +16,10 @@
       "attachments": [
         {
           "type": "cia",
-          "url": "https://githubusercontent.com"
+          "url": "https://githubusercontent.com",
+          "script": [
+            "install_cia"
+          ]
         }
       ]
     },
@@ -29,7 +32,7 @@
         {
           "type": "item",
           "url": "https://githubusercontent.com",
-          "output": "sdmc:/roms/nds/juego.nds"
+          "output": "sdmc:/roms/nds/juego_ejemplo.nds"
         }
       ]
     },
@@ -42,7 +45,7 @@
         {
           "type": "item",
           "url": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
-          "output": "sdmc:/roms/gba/juego.gba"
+          "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
     }
