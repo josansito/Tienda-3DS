@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 17,
+    "revision": 19,
     "version": 3
   },
   "storeContent": [
@@ -15,7 +15,7 @@
         "author": "Tu Nombre",
         "description": "Tu app homebrew personalizada.",
         "category": ["Apps"],
-        "icon": "https://githubusercontent.com"
+        "icon": ""
       },
       "script": [
         {
@@ -39,7 +39,7 @@
         "author": "Desarrollador",
         "description": "Juego de Game Boy Advance cargado de forma acelerada.",
         "category": ["GBA"],
-        "icon": "https://githubusercontent.com"
+        "icon": ""
       },
       "script": [
         {
