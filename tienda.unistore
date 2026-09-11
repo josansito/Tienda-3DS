@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 11,
+    "revision": 12,
     "version": 3
   },
   "storeContent": [
@@ -15,21 +15,29 @@
         "author": "Tu Nombre",
         "description": "Tu app homebrew personalizada. Se instalara directamente en el menu HOME.",
         "category": ["Apps"],
-        "icon": "https://githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/unore.png"
+        "icon": "https://raw.githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/unore.png"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://githubusercontent.com/Universal-Team/Universal-Updater/master/Universal-Updater.cia",
-          "output": "sdmc:/tienda_temp.cia"
-        },
-        {
-          "type": "installCia",
-          "file": "sdmc:/tienda_temp.cia"
-        },
-        {
-          "type": "deleteFile",
-          "file": "sdmc:/tienda_temp.cia"
+          "type": "default",
+          "meta": {
+            "title": "Instalar Aplicación CIA"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://raw.githubusercontent.com/Universal-Team/Universal-Updater/master/Universal-Updater.cia",
+              "output": "sdmc:/tienda_temp.cia"
+            },
+            {
+              "type": "installCia",
+              "file": "sdmc:/tienda_temp.cia"
+            },
+            {
+              "type": "deleteFile",
+              "file": "sdmc:/tienda_temp.cia"
+            }
+          ]
         }
       ]
     },
@@ -39,13 +47,21 @@
         "author": "Desarrollador",
         "description": "Juego de Nintendo DS. Se guardara en la carpeta para TWiLight Menu++.",
         "category": ["NDS"],
-        "icon": "https://githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/twilightmenu.png"
+        "icon": "https://raw.githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/twilightmenu.png"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/unore.png",
-          "output": "sdmc:/roms/nds/juego_ejemplo.nds"
+          "type": "default",
+          "meta": {
+            "title": "Descargar Juego NDS"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://raw.githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/unore.png",
+              "output": "sdmc:/roms/nds/juego_ejemplo.nds"
+            }
+          ]
         }
       ]
     },
@@ -55,13 +71,21 @@
         "author": "Desarrollador",
         "description": "Juego de Game Boy Advance. Se guardara en la carpeta para open_agb_firm o emuladores.",
         "category": ["GBA"],
-        "icon": "https://githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/open_agb_firm.png"
+        "icon": "https://raw.githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/open_agb_firm.png"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://github.com/josansito/Tienda-3DS/releases/download/V1.0.0/Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
-          "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
+          "type": "default",
+          "meta": {
+            "title": "Descargar Pokémon Quetzal"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://github.com/josansito/Tienda-3DS/releases/download/V1.0.0/Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
+              "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
+            }
+          ]
         }
       ]
     }
