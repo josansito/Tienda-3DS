@@ -3,9 +3,9 @@
     "title": "Tienda-3DS",
     "author": "Josansito",
     "description": "Repositorio privado de Apps, NDS y GBA",
-    "url": "https://raw.githubusercontent.com",
+    "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 6,
+    "revision": 7,
     "version": 4
   },
   "storeContent": [
@@ -18,21 +18,26 @@
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "%URL%",
-          "output": "sdmc:/tienda_temp.cia"
-        },
-        {
-          "type": "installCia",
-          "file": "sdmc:/tienda_temp.cia"
-        },
-        {
-          "type": "deleteFile",
-          "file": "sdmc:/tienda_temp.cia"
+          "type": "default",
+          "meta": {
+            "title": "Instalar aplicación"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://githubusercontent.com",
+              "output": "sdmc:/tienda_temp.cia"
+            },
+            {
+              "type": "installCia",
+              "file": "sdmc:/tienda_temp.cia"
+            },
+            {
+              "type": "deleteFile",
+              "file": "sdmc:/tienda_temp.cia"
+            }
+          ]
         }
-      ],
-      "attachments": [
-        "https://githubusercontent.com"
       ]
     },
     {
@@ -44,13 +49,18 @@
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "%URL%",
-          "output": "sdmc:/roms/nds/juego_ejemplo.nds"
+          "type": "default",
+          "meta": {
+            "title": "Descargar juego"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://githubusercontent.com",
+              "output": "sdmc:/roms/nds/juego_ejemplo.nds"
+            }
+          ]
         }
-      ],
-      "attachments": [
-        "https://githubusercontent.com"
       ]
     },
     {
@@ -62,13 +72,18 @@
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "%URL%",
-          "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
+          "type": "default",
+          "meta": {
+            "title": "Descargar Pokémon Quetzal"
+          },
+          "script": [
+            {
+              "type": "downloadFile",
+              "file": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
+              "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
+            }
+          ]
         }
-      ],
-      "attachments": [
-        "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba"
       ]
     }
   ]
