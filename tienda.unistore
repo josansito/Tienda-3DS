@@ -3,9 +3,10 @@
     "title": "Tienda-3DS",
     "author": "Josansito",
     "description": "Repositorio privado de Apps, NDS y GBA",
+    "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "version": 1,
-    "revision": 1
+    "version": 4,
+    "revision": 2
   },
   "storeContent": [
     {
