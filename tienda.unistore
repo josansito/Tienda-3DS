@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 13,
+    "revision": 15,
     "version": 3
   },
   "storeContent": [
@@ -13,19 +13,21 @@
       "info": {
         "title": "Mi Aplicacion Propia",
         "author": "Tu Nombre",
-        "description": "Tu app homebrew personalizada. Se instalara directamente en el menu HOME.",
+        "description": "Tu app homebrew personalizada. Se instalará directamente en el menú HOME.",
         "category": ["Apps"],
         "icon": "https://githubusercontent.com"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://githubusercontent.com",
+          "type": "downloadRelease",
+          "repository": "josansito/Tienda-3DS",
+          "tag": "V1.0.0",
+          "file": "mi_app.cia",
           "output": "sdmc:/tienda_temp.cia"
         },
         {
           "type": "installCia",
-          "file": "sdmc:/tienda_temp.cia"
+          "file": "/tienda_temp.cia"
         },
         {
           "type": "deleteFile",
@@ -35,32 +37,18 @@
     },
     {
       "info": {
-        "title": "Juego Ejemplo NDS",
-        "author": "Desarrollador",
-        "description": "Juego de Nintendo DS. Se guardara en la carpeta para TWiLight Menu++.",
-        "category": ["NDS"],
-        "icon": "https://githubusercontent.com"
-      },
-      "script": [
-        {
-          "type": "downloadFile",
-          "file": "https://githubusercontent.com",
-          "output": "sdmc:/roms/nds/juego_ejemplo.nds"
-        }
-      ]
-    },
-    {
-      "info": {
         "title": "Pokémon Quetzal 0.8.4 Español",
         "author": "Desarrollador",
-        "description": "Juego de Game Boy Advance. Se guardara en la carpeta para open_agb_firm o emuladores.",
+        "description": "Juego de Game Boy Advance.",
         "category": ["GBA"],
         "icon": "https://githubusercontent.com"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://github.com/josansito/Tienda-3DS/releases/download/V1.0.0/Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
+          "type": "downloadRelease",
+          "repository": "josansito/Tienda-3DS",
+          "tag": "V1.0.0",
+          "file": "Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
