@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 16,
+    "revision": 17,
     "version": 3
   },
   "storeContent": [
@@ -20,12 +20,12 @@
       "script": [
         {
           "type": "downloadFile",
-          "file": "https://github.com",
+          "file": "AQUÍ_VA_TU_ENLACE_DE_ARCHIVE_O_BOT.cia",
           "output": "sdmc:/tienda_temp.cia"
         },
         {
           "type": "installCia",
-          "file": "/tienda_temp.cia"
+          "file": "sdmc:/tienda_temp.cia"
         },
         {
           "type": "deleteFile",
@@ -37,14 +37,16 @@
       "info": {
         "title": "Pokémon Quetzal 0.8.4 Español",
         "author": "Desarrollador",
-        "description": "Juego de Game Boy Advance.",
+        "description": "Juego de Game Boy Advance cargado de forma acelerada.",
         "category": ["GBA"],
         "icon": "https://githubusercontent.com"
       },
       "script": [
         {
-          "type": "downloadFile",
-          "file": "https://github.com/josansito/Tienda-3DS/releases/download/V1.0.0/Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
+          "type": "downloadRelease",
+          "repository": "josansito/Tienda-3DS",
+          "tag": "V1.0.0",
+          "file": "Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
