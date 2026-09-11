@@ -7,12 +7,14 @@
     "version": 1,
     "revision": 1
   },
-  "apps": [
+  "storeContent": [
     {
-      "title": "Mi Aplicacion Propia",
-      "author": "Tu Nombre",
-      "description": "Tu app homebrew personalizada. Se instalara directamente en el menu HOME.",
-      "category": ["Apps"],
+      "info": {
+        "title": "Mi Aplicacion Propia",
+        "author": "Tu Nombre",
+        "description": "Tu app homebrew personalizada. Se instalara directamente en el menu HOME.",
+        "category": ["Apps"]
+      },
       "attachments": [
         {
           "type": "cia",
@@ -24,10 +26,12 @@
       ]
     },
     {
-      "title": "Juego Ejemplo NDS",
-      "author": "Desarrollador",
-      "description": "Juego de Nintendo DS. Se guardara en la carpeta para TWiLight Menu++.",
-      "category": ["NDS"],
+      "info": {
+        "title": "Juego Ejemplo NDS",
+        "author": "Desarrollador",
+        "description": "Juego de Nintendo DS. Se guardara en la carpeta para TWiLight Menu++.",
+        "category": ["NDS"]
+      },
       "attachments": [
         {
           "type": "item",
@@ -37,14 +41,16 @@
       ]
     },
     {
-      "title": "Pokémon Quetzal 0.8.4 Español",
-      "author": "Desarrollador",
-      "description": "Juego de Game Boy Advance. Se guardara en la carpeta para open_agb_firm o emuladores.",
-      "category": ["GBA"],
+      "info": {
+        "title": "Pokémon Quetzal 0.8.4 Español",
+        "author": "Desarrollador",
+        "description": "Juego de Game Boy Advance. Se guardara en la carpeta para open_agb_firm o emuladores.",
+        "category": ["GBA"]
+      },
       "attachments": [
         {
           "type": "item",
-          "url": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
+          "url": "https://archive.org",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
