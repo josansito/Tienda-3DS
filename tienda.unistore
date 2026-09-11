@@ -60,7 +60,7 @@
       "script": [
         {
           "type": "downloadFile",
-          "file": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
+          "file": "https://github.com/josansito/Tienda-3DS/releases/download/V1.0.0/Pokemon.Quetzal.Spanish.Alpha.0.8.4.gba",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
