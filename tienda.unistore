@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 3,
+    "revision": 4,
     "version": 4
   },
   "storeContent": [
@@ -20,6 +20,7 @@
         {
           "type": "cia",
           "url": "https://githubusercontent.com",
+          "description": "Instalar CIA en el menú HOME",
           "script": [
             "installCia"
           ]
@@ -37,6 +38,7 @@
         {
           "type": "item",
           "url": "https://githubusercontent.com",
+          "description": "Descargar archivo .NDS",
           "output": "sdmc:/roms/nds/juego_ejemplo.nds"
         }
       ]
@@ -52,6 +54,7 @@
         {
           "type": "item",
           "url": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
+          "description": "Descargar juego (.GBA)",
           "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
