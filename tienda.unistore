@@ -5,7 +5,7 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://raw.githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 8,
+    "revision": 9,
     "version": 4
   },
   "storeContent": [
@@ -23,7 +23,8 @@
             {
               "type": "downloadFile",
               "file": "https://githubusercontent.com",
-              "output": "sdmc:/tienda_temp.cia"
+              "output": "sdmc:/tienda_temp.cia",
+              "allowRedirects": true
             },
             {
               "type": "installCia",
@@ -51,7 +52,8 @@
             {
               "type": "downloadFile",
               "file": "https://githubusercontent.com",
-              "output": "sdmc:/roms/nds/juego_ejemplo.nds"
+              "output": "sdmc:/roms/nds/juego_ejemplo.nds",
+              "allowRedirects": true
             }
           ]
         }
@@ -71,7 +73,8 @@
             {
               "type": "downloadFile",
               "file": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
-              "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
+              "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba",
+              "allowRedirects": true
             }
           ]
         }
