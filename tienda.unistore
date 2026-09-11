@@ -3,10 +3,10 @@
     "title": "Tienda-3DS",
     "author": "Josansito",
     "description": "Repositorio privado de Apps, NDS y GBA",
-    "url": "https://raw.githubusercontent.com",
+    "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "revision": 9,
-    "version": 4
+    "revision": 10,
+    "version": 3
   },
   "storeContent": [
     {
@@ -18,23 +18,17 @@
       },
       "script": [
         {
-          "type": "default",
-          "commands": [
-            {
-              "type": "downloadFile",
-              "file": "https://githubusercontent.com",
-              "output": "sdmc:/tienda_temp.cia",
-              "allowRedirects": true
-            },
-            {
-              "type": "installCia",
-              "file": "sdmc:/tienda_temp.cia"
-            },
-            {
-              "type": "deleteFile",
-              "file": "sdmc:/tienda_temp.cia"
-            }
-          ]
+          "type": "downloadFile",
+          "file": "https://githubusercontent.com/Universal-Team/Universal-Updater/master/Universal-Updater.cia",
+          "output": "sdmc:/tienda_temp.cia"
+        },
+        {
+          "type": "installCia",
+          "file": "sdmc:/tienda_temp.cia"
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/tienda_temp.cia"
         }
       ]
     },
@@ -47,15 +41,9 @@
       },
       "script": [
         {
-          "type": "default",
-          "commands": [
-            {
-              "type": "downloadFile",
-              "file": "https://githubusercontent.com",
-              "output": "sdmc:/roms/nds/juego_ejemplo.nds",
-              "allowRedirects": true
-            }
-          ]
+          "type": "downloadFile",
+          "file": "https://githubusercontent.com/Universal-Team/Universal-DB/master/images/icons/unore.png",
+          "output": "sdmc:/roms/nds/juego_ejemplo.nds"
         }
       ]
     },
@@ -68,15 +56,9 @@
       },
       "script": [
         {
-          "type": "default",
-          "commands": [
-            {
-              "type": "downloadFile",
-              "file": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
-              "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba",
-              "allowRedirects": true
-            }
-          ]
+          "type": "downloadFile",
+          "file": "https://archive.org/download/pokemon-quetzal-spanish-alpha-0.8.4/Pokemon%20Quetzal%20Spanish%20Alpha%200.8.4.gba",
+          "output": "sdmc:/roms/gba/pokemon_quetzal_0.8.4.gba"
         }
       ]
     }
