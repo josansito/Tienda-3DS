@@ -5,8 +5,8 @@
     "description": "Repositorio privado de Apps, NDS y GBA",
     "url": "https://githubusercontent.com",
     "file": "tienda.unistore",
-    "version": 4,
-    "revision": 2
+    "revision": 3,
+    "version": 4
   },
   "storeContent": [
     {
@@ -21,7 +21,7 @@
           "type": "cia",
           "url": "https://githubusercontent.com",
           "script": [
-            "install_cia"
+            "installCia"
           ]
         }
       ]
